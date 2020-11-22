@@ -173,7 +173,7 @@ cycleButton?.addEventListener("click", () => {
   refreshPage();
 });
 aboutButton?.addEventListener("click", () => {
-  window.open("https://hungrybluedev.in/about/", "_blank");
+  window.open("https://github.com/hungrybluedev/tictactoe2", "_blank");
 });
 
 if (state.status === Status.ERROR) {
