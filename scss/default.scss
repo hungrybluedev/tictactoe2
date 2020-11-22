@@ -1,0 +1,114 @@
+$main-width: 90vw;
+$grid-width: 0.8 * $main-width;
+
+$main-background-colour: #aaaaaaa6;
+$square-colour: #f4f4f4;
+$square-hover-colour: #8d8d8d33;
+$square-active-colour: #36363650;
+
+@font-face {
+  font-family: "Shadows into Light";
+  src: url(../fonts/ShadowsIntoLight.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  display: grid;
+  overflow: hidden;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 3ch;
+  margin: 1ch;
+  width: $main-width;
+  max-width: 50ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-background-colour;
+  border-radius: 1ch;
+  background: linear-gradient(145deg, #fff, #e1e1e1);
+  box-shadow: 32px 32px 70px #b9b9b9, -32px -32px 70px #fff;
+
+  #logo {
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10ch;
+    height: 10ch;
+  }
+
+  h1 {
+    margin: 0 0 2rem 0;
+    font-family: "Shadows into Light", cursive;
+    font-size: 2.5rem;
+  }
+
+  #message {
+    height: 4ch;
+  }
+
+  #board {
+    padding: 10px;
+    width: $grid-width;
+    height: $grid-width;
+    max-width: 40ch;
+    max-height: 40ch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .square {
+    margin: 5px;
+    background-color: $square-colour;
+    border: none;
+    transition-duration: 200ms;
+    font-size: 3.5rem;
+  }
+  .square:active.clickable {
+    background-color: $square-active-colour;
+  }
+
+  .buttonpanel {
+    button {
+      border: none;
+      background: none;
+      transition-duration: 200ms;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main button.square:hover.clickable {
+    background-color: $square-hover-colour;
+  }
+  main button.square:active.clickable {
+    background-color: $square-active-colour;
+  }
+  .buttonpanel {
+    button:hover {
+      filter: brightness(0.9);
+    }
+    button:active {
+      filter: brightness(0.6);
+    }
+  }
+}
