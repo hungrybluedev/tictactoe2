@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Shadows into Light";
+  src: url(../fonts/ShadowsIntoLight.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+body {
+  display: grid;
+  overflow: hidden;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 3ch;
+  margin: 1ch;
+  width: 90vw;
+  max-width: 50ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #aaaaaaa6;
+  border-radius: 1ch;
+  background: linear-gradient(145deg, #fff, #e1e1e1);
+  box-shadow: 32px 32px 70px #b9b9b9, -32px -32px 70px #fff;
+}
+main #logo {
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10ch;
+  height: 10ch;
+}
+main h1 {
+  margin: 0 0 2rem 0;
+  font-family: "Shadows into Light", cursive;
+  font-size: 2.5rem;
+}
+main #message {
+  height: 4ch;
+}
+main #board {
+  padding: 10px;
+  width: 72vw;
+  height: 72vw;
+  max-width: 40ch;
+  max-height: 40ch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+main .square {
+  margin: 5px;
+  background-color: #f4f4f4;
+  border: none;
+  transition-duration: 200ms;
+  font-size: 3.5rem;
+}
+main .square:active.clickable {
+  background-color: #36363650;
+}
+main .buttonpanel button {
+  border: none;
+  background: none;
+  transition-duration: 200ms;
+}
+main .hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  main button.square:hover.clickable {
+    background-color: #8d8d8d33;
+  }
+
+  main button.square:active.clickable {
+    background-color: #36363650;
+  }
+
+  .buttonpanel button:hover {
+    filter: brightness(0.9);
+  }
+  .buttonpanel button:active {
+    filter: brightness(0.6);
+  }
+}
+
+/*# sourceMappingURL=default.css.map */
