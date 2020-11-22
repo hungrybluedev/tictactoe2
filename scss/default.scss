@@ -77,7 +77,7 @@ main {
     background-color: $square-colour;
     border: none;
     transition-duration: 200ms;
-    font-size: 3.5rem;
+    font-size: min(3rem, 10vw);
   }
   .square:active.clickable {
     background-color: $square-active-colour;
