@@ -94,15 +94,13 @@ const click = (state: State, index: number) => {
   button.classList.remove("clickable");
   button.disabled = true;
 
-  if (state.steps === 9) {
-    // No more empty slots
-    state.status = Status.DONE;
-    announce("Draw!");
-    return;
-  }
-
   const winner = checkVictory(state.summary);
   if (winner === 0) {
+    if (state.steps === 9) {
+      // No more empty slots
+      state.status = Status.DONE;
+      announce("Draw!");
+    }
     return;
   }
   state.status = Status.DONE;

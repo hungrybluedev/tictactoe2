@@ -73,13 +73,12 @@ const click = (state, index) => {
     button.textContent = state.steps % 2 === 0 ? "⭕" : "❌";
     button.classList.remove("clickable");
     button.disabled = true;
-    if (state.steps === 9) {
-        state.status = Status.DONE;
-        announce("Draw!");
-        return;
-    }
     const winner = checkVictory(state.summary);
     if (winner === 0) {
+        if (state.steps === 9) {
+            state.status = Status.DONE;
+            announce("Draw!");
+        }
         return;
     }
     state.status = Status.DONE;
