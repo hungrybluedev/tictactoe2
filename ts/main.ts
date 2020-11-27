@@ -1,6 +1,8 @@
 // The service worker provides the foundation for the PWA capabilities
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js").catch((err) => console.log(err));
+  navigator.serviceWorker
+    .register("/tictactoe2/sw.js")
+    .catch((err) => console.log(err));
 }
 
 import { letCPUTakeAShot } from "./cpu.js";
