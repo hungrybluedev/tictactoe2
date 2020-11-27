@@ -41,6 +41,28 @@
     />
 
     <link rel="stylesheet" href="css/default.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="tictactoe.webmanifest" />
+    <meta name="msapplication-TileColor" content="#eee" />
+    <meta name="theme-color" content="#eee" />
   </head>
   <body>
     <main>
@@ -48,15 +70,15 @@
       <h1>TicTacToe</h1>
       <div id="message"></div>
       <div id="board">
-        <button class="square clickable" id="00"></button>
-        <button class="square clickable" id="01"></button>
-        <button class="square clickable" id="02"></button>
-        <button class="square clickable" id="10"></button>
-        <button class="square clickable" id="11"></button>
-        <button class="square clickable" id="12"></button>
-        <button class="square clickable" id="20"></button>
-        <button class="square clickable" id="21"></button>
-        <button class="square clickable" id="22"></button>
+        <button class="square clickable" id="00" aria-label="Button 1"></button>
+        <button class="square clickable" id="01" aria-label="Button 2"></button>
+        <button class="square clickable" id="02" aria-label="Button 3"></button>
+        <button class="square clickable" id="10" aria-label="Button 4"></button>
+        <button class="square clickable" id="11" aria-label="Button 5"></button>
+        <button class="square clickable" id="12" aria-label="Button 6"></button>
+        <button class="square clickable" id="20" aria-label="Button 7"></button>
+        <button class="square clickable" id="21" aria-label="Button 8"></button>
+        <button class="square clickable" id="22" aria-label="Button 9"></button>
       </div>
       <div class="buttonpanel">
         <button id="button-reset" aria-label="Reset">
