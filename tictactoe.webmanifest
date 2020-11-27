@@ -1,7 +1,7 @@
 {
   "name": "TicTacToe",
   "short_name": "TicTacToe",
-  "start_url": "/tictactoe2/index.html",
+  "start_url": "/tictactoe2/",
   "display": "standalone",
   "theme_color": "#eee",
   "background_color": "#eee",
