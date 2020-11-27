@@ -1,0 +1,37 @@
+{
+  "name": "TicTacToe",
+  "short_name": "TicTacToe",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#eee",
+  "background_color": "#eee",
+  "description": "The classic TicTacToe game!",
+  "scope": "/tictactoe",
+  "icons": [
+    {
+      "src": "img/mstile-70x70.png",
+      "sizes": "70x70",
+      "type": "image/png"
+    },
+    {
+      "src": "img/mstile-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
+      "src": "img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
