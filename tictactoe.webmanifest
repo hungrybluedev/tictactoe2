@@ -6,7 +6,7 @@
   "theme_color": "#eee",
   "background_color": "#eee",
   "description": "The classic TicTacToe game!",
-  "scope": "/tictactoe",
+  "scope": "/tictactoe2",
   "icons": [
     {
       "src": "img/mstile-70x70.png",
