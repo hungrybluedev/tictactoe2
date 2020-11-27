@@ -1,12 +1,14 @@
 {
   "name": "TicTacToe",
   "short_name": "TicTacToe",
-  "start_url": "index.html",
+  "start_url": "/tictactoe2/index.html",
   "display": "standalone",
   "theme_color": "#eee",
   "background_color": "#eee",
   "description": "The classic TicTacToe game!",
   "scope": "/tictactoe2",
+  "lang": "en-US",
+  "orientation": "vertical",
   "icons": [
     {
       "src": "img/mstile-70x70.png",
