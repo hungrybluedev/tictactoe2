@@ -61,10 +61,11 @@ main #board {
 }
 main .square {
   margin: 5px;
-  background-color: #f4f4f4;
+  background-color: #fdca88;
   border: none;
   transition-duration: 200ms;
   font-size: min(3rem, 10vw);
+  border-radius: 0.5ch;
 }
 main .square:active.clickable {
   background-color: #36363650;

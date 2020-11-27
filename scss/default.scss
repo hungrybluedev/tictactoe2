@@ -2,7 +2,7 @@ $main-width: 90vw;
 $grid-width: 0.8 * $main-width;
 
 $main-background-colour: #aaaaaaa6;
-$square-colour: #f4f4f4;
+$square-colour: #fdca88;
 $square-hover-colour: #8d8d8d33;
 $square-active-colour: #36363650;
 
@@ -78,6 +78,7 @@ main {
     border: none;
     transition-duration: 200ms;
     font-size: min(3rem, 10vw);
+    border-radius: 0.5ch;
   }
   .square:active.clickable {
     background-color: $square-active-colour;
