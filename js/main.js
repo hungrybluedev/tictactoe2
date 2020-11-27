@@ -1,6 +1,8 @@
 if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-        .register("/tictactoe2/sw.js")
+        .register("sw.js", {
+        scope: "/tictactoe2/",
+    })
         .catch((err) => console.log(err));
 }
 import { letCPUTakeAShot } from "./cpu.js";
