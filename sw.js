@@ -1,14 +1,14 @@
 const files_to_cache = [
-  "/fonts/ShadowsIntoLight.ttf",
-  "/img/favicon.ico",
-  "/img/logo.svg",
-  "/css/default.css",
-  "/js/cpu.js",
-  "/js/definition.js",
-  "/js/main.js",
-  "/",
-  "/tictactoe.webmanifest",
-  "/index.html",
+  "fonts/ShadowsIntoLight.ttf",
+  "img/favicon.ico",
+  "img/logo.svg",
+  "css/default.css",
+  "js/cpu.js",
+  "js/definition.js",
+  "js/main.js",
+  "",
+  "tictactoe.webmanifest",
+  "index.html",
 ];
 const cache_name = "HBDTicTacToe-v2.0.0";
 self.addEventListener("install", (event) => {
