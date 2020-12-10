@@ -18,6 +18,7 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: #f6f6f6;
 }
 
 main {
@@ -28,9 +29,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #aaaaaaa6;
+  background-color: #aaaaaa;
   border-radius: 1ch;
-  background: linear-gradient(145deg, #fff, #e1e1e1);
+  background-color: #f6f6f6;
   box-shadow: 32px 32px 70px #b9b9b9, -32px -32px 70px #fff;
 }
 main #logo {
@@ -61,14 +62,14 @@ main #board {
 }
 main .square {
   margin: 5px;
-  background-color: #fdca88;
+  background-color: #ffffff;
   border: none;
   transition-duration: 200ms;
   font-size: min(3rem, 10vw);
   border-radius: 0.5ch;
 }
 main .square:active.clickable {
-  background-color: #36363650;
+  background-color: #747474;
 }
 main .buttonpanel button {
   border: none;
@@ -81,18 +82,15 @@ main .hidden {
 
 @media screen and (min-width: 768px) {
   main button.square:hover.clickable {
-    background-color: #8d8d8d33;
+    background-color: #d3d3d3;
   }
 
   main button.square:active.clickable {
-    background-color: #36363650;
+    background-color: #747474;
   }
 
   .buttonpanel button:hover {
     filter: brightness(0.9);
-  }
-  .buttonpanel button:active {
-    filter: brightness(0.6);
   }
 }
 
