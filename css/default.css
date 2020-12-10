@@ -63,7 +63,7 @@ main #board {
 main .square {
   margin: 5px;
   background-color: #ffffff;
-  border: none;
+  border: 2px solid #ddd;
   transition-duration: 200ms;
   font-size: min(3rem, 10vw);
   border-radius: 0.5ch;
