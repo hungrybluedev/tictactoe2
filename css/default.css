@@ -71,11 +71,16 @@ main .square {
 main .square:active.clickable {
   background-color: #747474;
 }
+main .buttonpanel {
+  display: flex;
+  justify-content: space-around;
+  width: 40ch;
+  max-width: 80%;
+}
 main .buttonpanel button {
   border: none;
   background: transparent;
   transition-duration: 200ms;
-  margin: 0 1rem;
 }
 main .hidden {
   display: none;
