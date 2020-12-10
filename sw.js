@@ -10,7 +10,7 @@ const files_to_cache = [
   "/tictactoe2/tictactoe.webmanifest",
   "/tictactoe2/index.html",
 ];
-const cache_name = "HBDTicTacToe-v2.0.0";
+const cache_name = "HBDTicTacToe-v2.1.0";
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
