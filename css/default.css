@@ -73,14 +73,19 @@ main .square:active.clickable {
 }
 main .buttonpanel button {
   border: none;
-  background: none;
+  background: transparent;
   transition-duration: 200ms;
+  margin: 0 1rem;
 }
 main .hidden {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+
   main button.square:hover.clickable {
     background-color: #d3d3d3;
   }
